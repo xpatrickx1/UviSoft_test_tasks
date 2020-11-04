@@ -1,0 +1,172 @@
+:root {
+    --green: #1fca3e;
+    --light_green: #b9dbb9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr {
+    border: 1px solid black;
+}
+
+table tr > th {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.user__phone, .user__email, .user__skype, .user__comment {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.user__phone.open__td, .user__email.open__td {
+    font-style: normal;
+}
+
+.user {
+    position: relative;
+}
+
+.user > td {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.user.active {
+    background: var(--light_green);
+}
+
+.details {
+    border: 1px solid black;
+    display: none;
+    background: var(--light_green);
+    padding: 30px;
+    vertical-align: top;
+}
+
+.details.open__td {
+    display: table-cell;
+    background: var(--light_green);
+}
+
+.details__header {
+    display: none;
+    width: 100%;
+}
+
+.name__header {
+    width: 200px;
+}
+
+.name__header.active {
+    min-width: 400px;
+}
+
+.show {
+    display: table-cell;
+}
+
+.hide {
+    display: none;
+}
+
+.cell_show {
+    display: table-cell;
+}
+
+.active.user:after,
+.active.user:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(100% + 1px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.active.user:after {
+    border-color: transparent transparent transparent var(--green);
+    border-width: 17px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.active.user:before {
+    border-color: transparent transparent transparent #000;
+    border-width: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.user > td.open__td {
+    border: none;
+}
+
+.user.open__tr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.user__name.open__td {
+    width: 100%;
+}
+
+.open__tr {
+    display: flex;
+}
+
+.open__td {
+    border: none;
+}
+
+.details__tr {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: 50px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
