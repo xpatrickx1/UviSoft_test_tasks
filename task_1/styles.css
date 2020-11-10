@@ -48,5 +48,18 @@ body {
     .blocks {
         width: 180px;
     }
+
+    .blocks__right {
+        flex-direction: column;
+    }
+
+    .block__right-top {
+        flex: 1 1 auto;
+    }
+
+    .block__right-bottom {
+        height: fit-content;
+        align-self: flex-end;
+    }
 }
 

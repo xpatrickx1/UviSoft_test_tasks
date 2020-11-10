@@ -7,41 +7,55 @@
     <title>UviSoft_test_tasks_2</title>
 </head>
 <body>
-<table>
-    <tr>
-        <th class="name__header" rowspan="2" >ФИО</th>
-        <th class="phone__header" rowspan="2" >Телефон</th>
-        <th class="email" rowspan="2" >Email</th>
-        <th class="user__skype" rowspan="2" >Skype</th>
-        <th class="user__comment" rowspan="2" >Коменттарий</th>
-        <th class="details__header">Детальная информация</th>
-    </tr>
-    <tr class="details__tr">
-        <td class="details" rowspan="1000"></td>
+<div class="table__wrapper">
+    <table class="users__table">
+        <tr class="row__header">
+            <th class="name__header">ФИО</th>
+            <th class="phone__header">Телефон</th>
+            <th class="email">Email</th>
+            <th class="user__skype">Skype</th>
+            <th class="user__comment">Коменттарий</th>
+        </tr>
+
+        <tr class="user">
+            <td class="user__cell user__name">Смородина Алена Александровна</td>
+            <td class="user__cell user__phone">0987658923</td>
+            <td class="user__cell user__email">alenasmorodina@gmail.com</td>
+            <td class="user__cell user__skype">alenasmorodina</td>
+            <td class="user__cell user__comment">Встреча завтра на 11:00.</td>
+        </tr>
+        <tr class="user">
+            <td class="user__cell user__name">Мироненнко-Коновалов Александр Игнатьевич</td>
+            <td class="user__cell user__phone">0506123123</td>
+            <td class="user__cell user__email">milanovalex@ua.fm</td>
+            <td class="user__cell user__skype">Milanovalex</td>
+            <td class="user__cell user__comment">Созвониться в пятницу 05.07.2019.</td>
+        </tr>
+        <tr class="user">
+            <td class="user__cell user__name">Зайченко Валентина Александровна</td>
+            <td class="user__cell user__phone">0966671290</td>
+            <td class="user__cell user__email">zay4enkovalya@mail.ru</td>
+            <td class="user__cell user__skype">zay4enkovalya</td>
+            <td class="user__cell user__comment">Очень занят в ближайшие 2 недели. 10.05.2019.</td>
+        </tr>
+    </table>
+
+    <!--<table class="details__table">-->
+    <!--<tr class="detailsr">-->
+    <!--<th class="details__header">Детальная информация</th>-->
+    <!--</tr>-->
+    <!--<tr class="details__tr">-->
+    <!--<td class="details"></td>-->
+    <!--<button class="close"> </button>-->
+    <!--</tr>-->
+    <!--</table>-->
+    <div class="details__table">
+        <div class="details__header">Детальная информация</div>
+        <div class="details"></div>
         <button class="close"></button>
-    </tr>
-    <tr class="user">
-        <td class="user__cell user__name">Смородина Алена Александровна</td>
-        <td class="user__cell user__phone">0987658923</td>
-        <td class="user__cell user__email">alenasmorodina@gmail.com</td>
-        <td class="user__cell user__skype">alenasmorodina</td>
-        <td class="user__cell user__comment">Встреча завтра на 11:00.</td>
-    </tr>
-    <tr class="user">
-        <td class="user__cell user__name">Мироненнко-Коновалов Александр Игнатьевич</td>
-        <td class="user__cell user__phone">0506123123</td>
-        <td class="user__cell user__email">milanovalex@ua.fm</td>
-        <td class="user__cell user__skype">Milanovalex</td>
-        <td class="user__cell user__comment">Созвониться в пятницу 05.07.2019.</td>
-    </tr>
-    <tr class="user">
-        <td class="user__cell user__name">Зайченко Валентина Александровна</td>
-        <td class="user__cell user__phone">0966671290</td>
-        <td class="user__cell user__email">zay4enkovalya@mail.ru</td>
-        <td class="user__cell user__skype">zay4enkovalya</td>
-        <td class="user__cell user__comment">Очень занят в ближайшие 2 недели. 10.05.2019.</td>
-    </tr>
-</table>
+    </div>
+    <!--<div class="details__table"></div>-->
+</div>
 
 <script type="text/javascript" src="main.js"></script>
 </body>

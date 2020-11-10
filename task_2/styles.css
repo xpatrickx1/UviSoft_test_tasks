@@ -9,6 +9,16 @@ body {
     font-family: Arial;
 }
 
+.table__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.users__table.active {
+    width: 50%;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -45,9 +55,27 @@ table tr > th {
     background: var(--light_green);
 }
 
-.details {
-    border: 1px solid black;
+.name__header.active {
+    border: none;
+}
+
+.details__table {
     display: none;
+}
+
+.details__table.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.details {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    flex: 1 1 auto;
     background: var(--light_green);
     padding: 30px;
     vertical-align: top;
@@ -59,7 +87,17 @@ table tr > th {
 }
 
 .details__header {
-    display: none;
+    height: 38px;
+    line-height: 38px;
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+.detailsr {
     width: 100%;
 }
 
@@ -119,6 +157,8 @@ table tr > th {
     flex-direction: row-reverse;
     border: none;
     border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .user__name.open__td {
